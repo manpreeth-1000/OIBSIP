@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Portfolio</title>
+   <link rel="stylesheet" href="./portfolio.css">
+</head>
+<body>
+   <div id="nav">
+       <a href=".home">Home</a>
+       <a href=".about">About</a>
+       <a href=".skills">Skills</a>
+       <a href=".projects">Projects</a>
+       <a href=".contact">Contact Me</a>
+   </div>
+   <div class="home">
+       <img src="./profilephoto.jpeg" alt="profile photo" id="profile-photo"><br>
+       <h1>Jakkuva Manpreeth</h1>
+       <h2>Web developer</h2>
+       <a href="" class="resume-button">View Resume</a>
+   </div>
+   <div class="about">
+       <center><h1>About Me</h1></center>
+       <div class="abt-cont">
+           <div class="sbs left">
+               <p>I'm a 3rd-year engineering student at GITAM University (Visakhapatnam), passionate about Data Structures
+                   and Algorithms (DSA) and proficient in web development. My knack for efficient problem-solving in DSA and
+                   hands-on experience web development drive my enthusiasm for creating innovative and responsive web
+                   solutions.
+                   </p>
+                   <br><br><br>
+               <center><img src="./selfphoto.jpeg" alt="self-photo" class="images"></center>
+           </div>
+           <div class="sbs right">
+               <h3>Information</h3>
+               <p>Manpreeth</p>
+               <p>9247229093</p>
+               <p>manpreethjakkuva256@gmail.com</p>
+               <br><br><br>
+               <h3>Address</h3>
+               <p>Home: <br> 103, Sai hamsika blooms, PM Palem, Visakhapatnam</p>
+               <p>College: <br> GITAM College, Yendada, Visakhapatnam</p>
+           </div>
+       </div>
+   </div>
+   <div class="skills">
+       <center><h1>Skills</h1></center>
+       <h2>Programming skills</h2>
+       <p>Proficient in programming languages and skilled in Data Structures and Algorithms (DSA), demonstrating a
+           strong foundation in problem-solving and algorithmic thinking.
+           </p>
+       <img src="./python.jpeg" alt="python" class="images">
+       <img src="./c.jpeg" alt="c" class="images">
+       <img src="./java.jpeg" alt="java" class="images">
+       <h2>Web Development</h2>
+       <p>Strong background in creating responsive and visually appealing user interfaces. Actively engaged in
+           expanding web development skills through practical projects and staying abreast of industry trends.</p>
+       <img src="./html.jpeg" alt="html" class="images">
+       <img src="./css.jpeg" alt="css" class="images">
+       <img src="./js.jpeg" alt="js" class="images">
+       <img src="./react.jpeg" alt="react" class="images">
+       <img src="./node.jpeg" alt="nodejs" class="images">
+       <h2>App development</h2>
+       <p>Strong background in creating responsive and visually appealing user interfaces. Actively engaged in
+           expanding web development skills through practical projects and staying abreast of industry trends.</p>
+       <img src="./kotlin.jpeg" alt="kotlin" class="images">
+       <img src="./git.jpeg" alt="git" class="images">
+   </div>
+   <div class="projects">
+       <center><h1>Projects</h1></center>
+       <h2>Programming Skills</h2>
+       <h3>Project 1 :</h3>
+       <p>Built a lexical analyzer and syntax analyzer for c language with limited functionality (C Language)</p>
+       <h3>Project 2 :</h3>
+       <p>Made an animation to effectively visualize the working of the important sorting algorithms (Python)</p>
+       
+       <h2>Web development</h2>
+       <h3>Project 1 :</h3>
+       <p>Designed and launched a professional e-commerce website tailored for a panipuri business, featuring
+           a comprehensive array of flavors. Implemented user-friendly navigation and a seamless ordering
+           system to enhance customer experience.</p>
+       <h3>Project 2 :</h3>
+       <p>Developed and launched an educational website dedicated to dog breeds, offering in-depth
+           information on various breeds. Incorporated an intuitive user interface to facilitate seamless
+           navigation and optimize the learning experience.</p>
+   </div>
+   <div class="contact">
+       <h1>Contact Me :</h1>
+       <p>Email</p>
+       <p>Instagram</p>
+       <p>Facebook</p>
+       <p>LinkedIn</p>
+       <p>Phone Number</p>
+   </div>
+   <script>
+       document.querySelectorAll('a[href^="."]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+           e.preventDefault();
+   
+           document.querySelector(this.getAttribute('href')).scrollIntoView({
+             behavior: 'smooth'
+           });
+         });
+       });
+     </script>
+</body>
+</html>
